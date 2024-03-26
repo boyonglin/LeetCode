@@ -17,9 +17,9 @@ class Solution:
                 return key
             
         # method 2
-        # n = len(nums)
+        # n = len(nums) // 2
         # nums.sort()
-        # return nums[n // 2]
+        # return nums[n]
 
 # Testcase
 nums = [2,2,1,1,1,2,2]
