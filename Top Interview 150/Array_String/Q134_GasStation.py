@@ -11,7 +11,8 @@ class Solution:
         for i in range(n):
             tank += gas[i] - cost[i]
 
-            # If tank < 0, means cannot reach next station
+            # If tank < 0, means cannot return to start
+            # If none of n-1 stations can, then the nth station should be the start
             if tank < 0:
                 start = i + 1
                 tank = 0
