@@ -14,8 +14,7 @@ class Solution:
         #     if haystack[i:i + len(needle)] == needle:
         #         return i
 
-
-# Testcase\
+# Testcase
 haystack = "sadbutsad"
 needle = "sad"
 
