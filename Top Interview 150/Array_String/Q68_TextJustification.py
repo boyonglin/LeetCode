@@ -33,7 +33,7 @@ class Solution:
         return result
 
 # Testcase
-words = words = ["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do","do"]
+words = ["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do","do"]
 maxWidth = 20
 
 sol = Solution()
