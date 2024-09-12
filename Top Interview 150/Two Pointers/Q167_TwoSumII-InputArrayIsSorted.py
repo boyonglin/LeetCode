@@ -18,12 +18,6 @@ class Solution:
                 else:
                     right = mid - 1
 
-            # for j in range(len(numbers) - 1, i, -1):
-            #     if j < len(numbers) - 1 and numbers[j] == numbers[j+1]:
-            #         continue
-            #     if i != j and numbers[j] == target - numbers[i]:
-            #         return [i+1, j+1]
-
 # Testcase
 numbers = [2,7,11,15]
 target = 9
