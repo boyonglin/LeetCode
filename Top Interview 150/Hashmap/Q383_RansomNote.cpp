@@ -7,7 +7,7 @@ using namespace std;
 class Solution {
 public:
     bool canConstruct(string ransomNote, string magazine) {
-        std::unordered_map<char, int> hashmap;
+        unordered_map<char, int> hashmap;
         for (int i = 0; i < ransomNote.size(); i++) {
             hashmap[ransomNote[i]]++;
         }

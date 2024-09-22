@@ -7,8 +7,9 @@ using namespace std;
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
-        std::unordered_map<char, int> iso_map;
+        unordered_map<char, int> iso_map;
 
+        // check s -> t
         for (int i = 0; i < s.size(); i++) {
             if (iso_map.find(s[i]) == iso_map.end()) {
                 iso_map[s[i]] = t[i];
@@ -22,6 +23,7 @@ public:
 
         iso_map.clear();
 
+        // check t -> s
         for (int i = 0; i < t.size(); i++) {
             if (iso_map.find(t[i]) == iso_map.end()) {
                 iso_map[t[i]] = s[i];
