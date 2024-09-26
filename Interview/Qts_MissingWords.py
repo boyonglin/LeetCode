@@ -1,4 +1,3 @@
-
 class Solution:
     def missingWords(self, s, t):
         s = s.split(' ')
