@@ -14,6 +14,8 @@ class Solution:
 
         return -1
 
+# Testcases
 array = [1,2,4,8,4,2]
+
 sol = Solution()
 print(sol.changingSequence(array))
