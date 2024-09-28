@@ -1,3 +1,4 @@
+# o1-mini
 class Solution:
     def calculate(self, s: str) -> int:
         num_stack = []
@@ -41,7 +42,6 @@ class Solution:
             i += 1
 
         return res
-
 
 # Testcases
 s = "(1+(4+5+2)-3)+(6+8)"
