@@ -8,7 +8,7 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-        sum = ListNode(0)
+        sum = ListNode()
         current = sum
         carry = 0
 
