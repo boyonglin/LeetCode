@@ -19,7 +19,7 @@ class Solution:
 
         return False
 
-def createLinkedList(arr, pos = -1):
+def ll_create(arr, pos = -1):
     if not arr:
         return None
 
@@ -42,7 +42,7 @@ def createLinkedList(arr, pos = -1):
 head = [3,2,0,-4]
 pos = 1
 
-head = createLinkedList(head, pos)
+head = ll_create(head, pos)
 
 sol = Solution()
 print(sol.hasCycle(head))

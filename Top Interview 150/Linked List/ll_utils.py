@@ -3,7 +3,7 @@ class ListNode:
         self.val = val
         self.next = next
 
-def createLinkedList(arr):
+def ll_create(arr):
     if not arr:
         return None
 
@@ -16,11 +16,9 @@ def createLinkedList(arr):
 
     return head
 
-def printLinkedList(node):
-    values = []
-
+def ll_print(node):
     while node:
-        values.append(str(node.val))
+        print(node.val, end=" ")
         node = node.next
 
-    print(" -> ".join(values))
+    print() # newline

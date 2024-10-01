@@ -1,6 +1,6 @@
 # 4o
 
-from ll_utils import createLinkedList, printLinkedList
+from ll_utils import ll_create, ll_print
 
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -36,7 +36,7 @@ head = [1,2,3,4,5]
 left = 2
 right = 4
 
-head = createLinkedList(head)
+head = ll_create(head)
 
 sol = Solution()
-printLinkedList(sol.reverseBetween(head, left, right))
+ll_print(sol.reverseBetween(head, left, right))

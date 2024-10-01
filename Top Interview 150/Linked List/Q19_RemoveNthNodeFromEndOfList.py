@@ -1,5 +1,5 @@
 from typing import Optional
-from ll_utils import createLinkedList, printLinkedList
+from ll_utils import ll_create, ll_print
 
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -28,7 +28,7 @@ class Solution:
 head = [1,2,3,4,5]
 n = 2
 
-head = createLinkedList(head)
+head = ll_create(head)
 
 sol = Solution()
-printLinkedList(sol.removeNthFromEnd(head, n))
+ll_print(sol.removeNthFromEnd(head, n))
