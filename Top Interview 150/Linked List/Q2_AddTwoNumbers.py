@@ -15,9 +15,9 @@ class Solution:
 
         while l1 or l2:
             if l1 is None:
-                l1 = ListNode(0)
+                l1 = ListNode()
             if l2 is None:
-                l2 = ListNode(0)
+                l2 = ListNode()
 
             temp = l1.val + l2.val + carry
 
