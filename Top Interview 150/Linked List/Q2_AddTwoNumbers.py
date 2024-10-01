@@ -1,4 +1,5 @@
 from typing import Optional
+from ll_utils import createLinkedList, printLinkedList
 
 # definition for singly-linked list
 class ListNode:
@@ -36,25 +37,6 @@ class Solution:
 
         return sum.next
 
-def createLinkedList(arr):
-    if not arr:
-        return None
-
-    head = ListNode(arr[0])
-    current = head
-
-    for i in range(1, len(arr)):
-        current.next = ListNode(arr[i])
-        current = current.next
-
-    return head
-
-def print_linked_list(node):
-    while node:
-        print(node.val, end=" ")
-        node = node.next
-    print()
-
 # Testcase
 l1 = [9,9,9,9,9,9,9]
 l2 = [9,9,9,9]
@@ -63,4 +45,4 @@ l1 = createLinkedList(l1)
 l2 = createLinkedList(l2)
 
 sol = Solution()
-print_linked_list(sol.addTwoNumbers(l1, l2))
+printLinkedList(sol.addTwoNumbers(l1, l2))
