@@ -30,7 +30,7 @@ class Solution:
 
             # reverse
             next_group = tail
-            reverse_head = self.reverse_list(curr, k)
+            reverse_head = self.reverseList(curr, k)
 
             # connect
             prev.next = reverse_head
@@ -42,7 +42,7 @@ class Solution:
 
         return reverse.next
 
-    def reverse_list(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+    def reverseList(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         curr = head
         prev = None
         count = 0
@@ -58,8 +58,6 @@ class Solution:
             count += 1
 
         return prev
-
-
 
 # Testcase
 head = [1,2,3,4,5]
