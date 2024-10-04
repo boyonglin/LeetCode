@@ -1,7 +1,6 @@
 from typing import Optional
 from ll_utils import ll_create, ll_print
 
-# definition for singly-linked list
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
