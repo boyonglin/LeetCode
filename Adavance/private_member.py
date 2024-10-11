@@ -19,7 +19,7 @@ class School():
 if __name__ == "__main__":
     harry = School()
 
-    harry.__learn()
+    # harry.__learn()
     # AttributeError: 'School' object has no attribute '__learn'
 
     harry.cast()
@@ -28,6 +28,6 @@ if __name__ == "__main__":
     harry.library()
     # Getter: Spells: 1
 
-    harry._Academy__spells = 10
+    harry._School__spells = 10
     harry.library()
     # Spells: 10
