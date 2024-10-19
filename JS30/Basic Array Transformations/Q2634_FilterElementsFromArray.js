@@ -6,9 +6,10 @@ var filter = function(arr, fn) {
             res.push(arr[i]);
         }
     }
+
     return res;
 };
 
-fn = function greaterThan10(n) { return n > 10; }
-arr = [0, 10, 20, 30];
+let fn = function greaterThan10(n) { return n > 10; }
+let arr = [0, 10, 20, 30];
 console.log(filter(arr, fn));

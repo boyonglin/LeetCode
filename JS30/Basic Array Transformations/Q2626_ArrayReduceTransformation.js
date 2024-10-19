@@ -8,7 +8,7 @@ var reduce = function(nums, fn, init) {
     return res;
 };
 
-nums = [1,2,3,4];
-fn = function sum(accum, curr) { return accum + curr * curr; }
+let nums = [1,2,3,4];
+let fn = function sum(accum, curr) { return accum + curr * curr; }
 init = 100;
 console.log(reduce(nums, fn, init));

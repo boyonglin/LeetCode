@@ -8,6 +8,6 @@ var map = function(arr, fn) {
     return res;
 };
 
-fn = function plusI(n, i) { return n + i; }
-arr = [1, 2, 3];
+let fn = function plusI(n, i) { return n + i; }
+let arr = [1, 2, 3];
 console.log(map(arr, fn));

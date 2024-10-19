@@ -1,4 +1,5 @@
 var expect = function(val) {
+    
     return {
         toBe: (value) => {
             if (value !== val) {

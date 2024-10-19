@@ -1,5 +1,6 @@
 var createCounter = function(init) {
     let counter = init;
+    
     return {
         increment: () => counter += 1,
         decrement: () => counter -= 1,
