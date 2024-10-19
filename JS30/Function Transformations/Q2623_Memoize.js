@@ -1,10 +1,11 @@
 function memoize(fn) {
-    const cache = {};
+    const cache = {};  // Object
 
     return function(...args) {
         const key = JSON.stringify(args);
 
         // if (!(key in cache)) { ... }
+
         if (typeof(cache[key]) === "undefined") {
             cache[key] = fn(...args);
         }
