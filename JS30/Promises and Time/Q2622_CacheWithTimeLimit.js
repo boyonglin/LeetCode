@@ -22,11 +22,12 @@ class TimeLimitedCache {
     }
 
     get(key) {
+        console.log([...this.cache.keys()]);
         return this.cache.has(key) ? this.cache.get(key).value : -1;
     }
 
     count() {
-        return this.cache.size; // size (Map, Set)
+        return this.cache.size; // Map, Set -> size
     }
 }
 
