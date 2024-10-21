@@ -1,4 +1,4 @@
-// 4o
+// ExplainThis
 
 var compactObject = function (obj) {
 
