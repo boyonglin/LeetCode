@@ -1,7 +1,5 @@
-var sortBy = function(arr, fn) {
-    return arr.toSorted((a, b) => {
-        fn(a) - fn(b);  // compare function
-    });
+function sortBy(arr, fn) {
+    return arr.toSorted((a, b) => fn(a) - fn(b));  // compare function
 };
 
 const arr = [{"x": 1}, {"x": 0}, {"x": -1}], fn = (d) => d.x;

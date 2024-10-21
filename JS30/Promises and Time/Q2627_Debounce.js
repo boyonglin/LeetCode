@@ -1,4 +1,4 @@
-var debounce = function(fn, t) {
+var debounce = function(fn, delay) {
     let inputTimer;
 
     return function(...args) {
@@ -6,7 +6,7 @@ var debounce = function(fn, t) {
 
         inputTimer = setTimeout(() => {
             fn(...args);
-        }, t);
+        }, delay);
     }
 };
 

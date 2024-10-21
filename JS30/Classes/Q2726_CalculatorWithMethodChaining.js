@@ -34,7 +34,7 @@ class Calculator {
     }
 
     getResult() {
-        return this.res;  // return result
+        return this.res;  // return value only
     }
 }
 

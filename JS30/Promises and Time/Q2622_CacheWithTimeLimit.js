@@ -22,7 +22,6 @@ class TimeLimitedCache {
     }
 
     get(key) {
-        console.log([...this.cache.keys()]);
         return this.cache.has(key) ? this.cache.get(key).value : -1;
     }
 
