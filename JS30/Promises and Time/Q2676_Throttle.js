@@ -14,6 +14,6 @@ var throttle = function (fn, delay) {
 const throttled = throttle(() => console.log("throttle"), 100);
 
 // if keep scrolling, the console will keep logging "throttle" every 100ms
-window.addEventListener("scroll", () => {
-    updateThrottleText();
-});
+// window.addEventListener("scroll", () => {
+//     throttled();
+// });
